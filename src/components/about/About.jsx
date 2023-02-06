@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Typewriter from 'typewriter-effect';
 import aboutimg from '../../assets/About1.png';
+import Arrow from '../atoms/arrow/Arrow';
+import Social from '../atoms/socials/Social';
 
 
 export default class About extends Component {
@@ -20,6 +22,7 @@ export default class About extends Component {
 
     return (
       <div>
+        <Social/>
         <div className="row">
           <div className="col-4"><img src={aboutimg} alt="react logo" style={styleimg} /></div>
           <div className="col-8" style={{ marginLeft: '-5%', marginTop: '5%' }}>
@@ -42,7 +45,7 @@ export default class About extends Component {
             <div className='btn border border-primary text-light' style={{ boxShadow: '2px 2px', marginLeft: '10px' }}>Know More</div>
           </div>
         </div>
-
+        <Arrow/>
       </div>
     )
   }
